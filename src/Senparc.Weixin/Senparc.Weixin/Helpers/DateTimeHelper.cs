@@ -68,7 +68,7 @@ namespace Senparc.Weixin.Helpers
         /// </summary>
         /// <param name="dateTime">时间</param>
         /// <returns></returns>
-        public static long GetWeixinDateTime(DateTime dateTime)
+        public static long GetWeixinDateTime(DateTimeOffset dateTime)
         {
             return (dateTime.Ticks - BaseTime.Ticks) / 10000000 - 8 * 60 * 60;
         }
